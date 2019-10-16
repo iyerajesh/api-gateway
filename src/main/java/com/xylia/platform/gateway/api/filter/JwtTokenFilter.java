@@ -23,7 +23,7 @@ import static org.springframework.http.HttpStatus.UNAUTHORIZED;
 @Slf4j
 public class JwtTokenFilter implements GlobalFilter, Ordered {
 
-    private static final String X_JWT_SUBJECT = "x-jwt-subject";
+    public static final String X_JWT_SUBJECT = "x-jwt-subject";
     private JWTVerifier jwtVerifier;
 
     public JwtTokenFilter(JWTVerifier jwtVerifier) {
